@@ -223,6 +223,7 @@ span {
     transition: .5s ease;
 }
 
+
 .skills-container .skills-box:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
@@ -376,9 +377,6 @@ span {
     background: var(--second-bg-color);
 }
 
-.footer-text p {
-    font-size: 1.6rem;
-}
 
 .footer-iconTop a {
     display: inline-flex;
