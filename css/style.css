@@ -196,8 +196,54 @@ span {
     margin: 2rem 0 3rem;
 }
 
+.skills {
+    min-height: auto;
+    padding-bottom: 10rem;
+}
+
+.skills h2 {
+    margin-bottom: 5rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skills-container .skills-box {
+    flex: 1 1 30rem;
+    background: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+
+.skills-container .skills-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.skills-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.skills-box h3 {
+    font-size: 2.6rem;
+}
+
+.skills-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
 .projects {
-    background: var(--bg-color);
+    background: var(--second-bg-color);
     min-height: auto;
     padding-bottom: 10rem;
 }
@@ -278,7 +324,6 @@ span {
 .contact {
     min-height: auto;
     padding-bottom: 7rem;
-    background: var(--second-bg-color);
 }
 
 .contact h2 {
@@ -304,7 +349,7 @@ span {
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--bg-color);
+    background: var(--second-bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -324,11 +369,11 @@ span {
 
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: var(--second-bg-color);
 }
 
 .footer-text p {
@@ -337,7 +382,7 @@ span {
 
 .footer-iconTop a {
     display: inline-flex;
-    justify-content: center;
+    justify-content: right;
     align-items: right;
     padding: .8rem;
     background: var(--main-color);
@@ -377,7 +422,7 @@ span {
 }
 
 @media (max-width: 879px) {
-    .projects-container {
+    .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -437,7 +482,7 @@ span {
 }
 
 @media (max-width: 580px) {
-    .projects-container {
+    .portfolio-container {
         grid-template-columns: 1fr;
     }
 }
